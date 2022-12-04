@@ -1,5 +1,12 @@
+:root {
+    --color-title:#2E2F42;
+    --color-text:#434455;
+    --color-accent:#4D5AE5; 
+}
+
 body {
     font-family: "Roboto", sans-serif ;
+    color: var(--color-accent);
 }
 
 
@@ -14,11 +21,11 @@ body {
 
 .menu-link:hover,
 .menu-link:focus {
-    color: #434455;
+    color: var(--color-text);
 }
 
 .menu-link:active {
-    color: #4D5AE5;
+    color: var(--color-accent);
 }
 
 
@@ -26,13 +33,13 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.33;
+    line-height: 1.3;
     letter-spacing: 0.03em;
-    color: #2E2F42;
+    color: var(--color-title);
 }
 
 .logo-span {
-    color: #4D5AE5;
+    color: var(--color-accent);
 }
 
 
@@ -41,31 +48,31 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--color-title);
 }
 
 .contact-mail {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--color-text);
 }
 
 .contact-mail:hover,
 .contact-mail:focus {
-    color: #4D5AE5;
+    color: var(--color-accent);
 }
 
 .contact-phone-number {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--color-text);
 }
 
 .contact-phone-number:hover,
 .contact-phone-number:focus {
-    color: #4D5AE5;
+    color: var(--color-accent);
 }
 
 /* ============HERO============= */
@@ -77,7 +84,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    background: #2E2F42
+    background: var(--color-title)
 }
 
 .button {
@@ -90,11 +97,19 @@ body {
     color: #FFFFFF;
     width: 170px;
     height: 51px;
-    background-color: #4D5AE5;
+    background-color: var(--color-accent);
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    cursor: pointer;
 
+}
+
+.button:hover,
+.button:focus {
+    background: var(--color-accent);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 4px;
 }
 
 .button:active {
@@ -102,22 +117,27 @@ body {
 }
 
 /* ===================ABOUT============== */
+
+.about-title,
+.filter-title,
+.portfolio-title {
+    font-size: 0;
+}
+
 .about-list-title {
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--color-title);
 }
 
 .about-text {
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--color-text);
 }
 
 /* ======================WORKS======================= */
@@ -126,11 +146,11 @@ body {
 .team-title {
     font-weight: 500;
     font-size: 36px;
-    line-height: 1.11;
+    line-height: 1.1;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--color-title);
 }
 
 /* =====================TEAM===================== */
@@ -140,14 +160,14 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--color-title);
 }
 
 .position {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--color-text);
 }
 
 /* ================FOOTER===================== */
@@ -169,12 +189,13 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
-    color: #4D5AE5;
+    color: var(--color-accent);
     background: #F4F4FD;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     width: 116px;
     height: 48px;
+    cursor: pointer;
 }
 
 /* =================FILTER================== */
@@ -182,7 +203,7 @@ body {
 .btn:hover,
 .btn:focus {
     color: #FFFFFF;
-    background: #4D5AE5;
+    background: var(--color-accent);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
@@ -194,13 +215,13 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--color-title);
 }
 
 .portfolio-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--color-text);
 }
 
