@@ -2,6 +2,10 @@
     --color-title:#2E2F42;
     --color-text:#434455;
     --color-accent:#4D5AE5; 
+    --color-white: #FFFFFF;
+    --color-but-active: #404BBF;
+    --color-light: #F4F4FD;
+    --color-soft: #E7E9FC;
 }
 
 body {
@@ -16,17 +20,19 @@ body {
 
 .link {
     text-decoration: none;
-    font-family: inherit;
 }
 
 .menu-link:hover,
-.menu-link:focus {
-    color: var(--color-text);
-}
-
+.menu-link:focus 
 .menu-link:active {
     color: var(--color-accent);
 }
+
+.menu-link.current {
+    color: var(--color-accent);
+}
+
+
 
 
 .logo {
@@ -36,6 +42,7 @@ body {
     line-height: 1.3;
     letter-spacing: 0.03em;
     color: var(--color-title);
+    text-transform: uppercase;
 }
 
 .logo-span {
@@ -83,18 +90,20 @@ body {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--color-white);
+}
+
+.hero {
     background: var(--color-title)
 }
 
 .button {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
+    color: var(--color-white);
     width: 170px;
     height: 51px;
     background-color: var(--color-accent);
@@ -113,14 +122,13 @@ body {
 }
 
 .button:active {
-    background: #404BBF;
+    background-color: var(--color-but-active);
 }
 
 /* ===================ABOUT============== */
 
 .about-title,
-.filter-title,
-.portfolio-title {
+.filter-title {
     font-size: 0;
 }
 
@@ -155,6 +163,10 @@ body {
 
 /* =====================TEAM===================== */
 
+.team {
+    background: var(--color-light);
+}
+
 .team-title-name {
     font-weight: 500;
     font-size: 20px;
@@ -170,18 +182,36 @@ body {
     color: var(--color-text);
 }
 
+.team-item {
+    background: var(--color-white);
+    padding: 0px 0px 32px;
+    width: 264px;
+    height: 380px;
+    left: 156px;
+    top: 1783px;
+}
+
 /* ================FOOTER===================== */
+
+.footer {
+    background-color: var(--color-title);
+}
+
+.logo-footer {
+    color: var(--color-light);
+}
 
 .footer-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #E7E9FC;
+    color: var(--color-soft);
 }
 
 
 
 .btn {
+    font-family: inherit;
     font-weight: 600;
     font-size: 16px;
     line-height: 1,5;
@@ -190,19 +220,18 @@ body {
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--color-accent);
-    background: #F4F4FD;
-    border: 1px solid #E7E9FC;
+    background: var(--color-light);
+    border: 1px solid var(--color-soft);
     border-radius: 4px;
-    width: 116px;
-    height: 48px;
     cursor: pointer;
+    padding: 8px 16px;
 }
 
 /* =================FILTER================== */
 
 .btn:hover,
 .btn:focus {
-    color: #FFFFFF;
+    color: var(--color-white);
     background: var(--color-accent);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
